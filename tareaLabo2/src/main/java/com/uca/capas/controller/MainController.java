@@ -14,7 +14,11 @@ public class MainController {
 	}
 	
 	@PostMapping("/validacion")
-	public String validacion (Usuario usuario) {
-		return "validando";
+	public boolean validacion (Usuario usuario) {
+		boolean flag = false;
+		if (usuario.getNombre() == "Mariana" || usuario.getContra()=="Molina") {
+			return flag = true;
+		}
+		else return flag;
 	}
 }

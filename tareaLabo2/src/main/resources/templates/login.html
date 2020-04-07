@@ -9,13 +9,13 @@
 	
 	<form action="#" th:action="@{/login}" th:object="${usuario}" method="post">
 		<p>
-			Nombre: <input type="text" th:field="*{nombre}">
+			Nombre: <input type="text" th:field="*{nombre}" required>
 		</p>
 		<p>
-			Contra: <input type="text" th:field="*{contraseña}">
+			Contra: <input type="text" th:field="*{contra}" required>
 		</p>
 		<p>
-			<input type= "submit" value:"Enviar"> <input type="reset" value="Borrar">
+			<input type= "submit" value="Enviar" href="/MostrarMensajeV"> <input type="reset" value="Borrar">
 		</p>
 	</form>
 </body>

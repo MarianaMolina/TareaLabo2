@@ -2,7 +2,7 @@ package com.uca.capas.domain;
 
 public class Usuario {
 	private String nombre;
-	private String contraseña;
+	private String contra;
 	
 	public String getNombre() {
 		return nombre;
@@ -12,12 +12,20 @@ public class Usuario {
 		this.nombre = Nombre;
 	}
 	
-	public String getContraseña() {
-		return contraseña;
+	public String getContra() {
+		return contra;
 	}
 	
-	public void setContraseña(String Contraseña) {
-		this.contraseña = Contraseña;
+	public void setContra(String Contra) {
+		this.contra = Contra;
+	}
+	
+	public boolean Validacion(String user, String pass ) {
+		boolean flag = false;
+		if (user == "Mariana" || pass=="Molina") {
+			return flag = true;
+		}
+		else return flag;
 	}
 
 }
